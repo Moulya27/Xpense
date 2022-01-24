@@ -108,7 +108,7 @@ closeOnClick
       <div className= {styles.formAddBtn}>
 <div onClick={submitHandler}>
     <label>Add</label>
-    <i class="fi fi-rr-paper-plane"></i>
+    <i className="fi fi-rr-paper-plane"></i>
 </div>
       </div>
     </div>

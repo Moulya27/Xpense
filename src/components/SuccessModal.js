@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 import styles from './SuccessModal.module.css';
 const SuccessModal = ({isModalOpen,setIsModalOpen}) => {
+  Modal.setAppElement('#root');
     const customStyles = {
         content: {
           top: '50%',
@@ -22,7 +23,7 @@ const SuccessModal = ({isModalOpen,setIsModalOpen}) => {
 <img className = {styles.addedImage} src = {require('../assets/success-modal.svg').default} alt='Expense added successfull'/>
 <Link to = '/'>
 <div className={styles.homeBtn}>
-<i class="fi fi-rr-home"></i>
+<i className="fi fi-rr-home"></i>
 Home
 </div>
 </Link>

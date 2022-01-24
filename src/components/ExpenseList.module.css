@@ -1,0 +1,47 @@
+.expenseContainer{
+    margin: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.emptyListImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.emptyListImage img{
+    height: 300px;
+}
+.emptyListImage label{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+.totalAmount{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+@media only screen and (max-width: 1024px){
+    .emptyListImage img{
+        height: 250px;
+    }
+    .emptyListImage label{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 512px){
+    .emptyListImage img{
+        height: 200px;
+    }
+    .totalAmount{
+        font-size: 1rem;
+    }
+}

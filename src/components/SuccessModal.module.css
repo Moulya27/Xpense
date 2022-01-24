@@ -1,0 +1,52 @@
+.modalInner{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.modalInner label{
+    font-size: 1.5rem;
+    color: #2F2E41;
+}
+.addedImage{
+    height: 300px;
+}
+.homeBtn{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #2F2E41;
+    color: #fff;
+    cursor: pointer;
+}
+
+.homeBtn i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.3rem;
+    
+}
+
+@media only screen and (max-width:1024px){
+    .addedImage{
+        height: 250px;
+    }
+
+    .modalInner label{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:512px){
+    .addedImage{
+        height: 150px;
+    }
+    .modalInner label{
+        font-size: 1rem;
+    }
+}

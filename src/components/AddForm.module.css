@@ -1,0 +1,113 @@
+.addForm {
+  width: 50%;
+  margin: auto;
+  background: #c5c5c5;
+  box-shadow: 24px 24px 48px #adadad, -24px -24px 48px #dddddd;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 60vh;
+  border-radius: 1.5rem;
+}
+
+.expenseItem{
+    margin-bottom: 2rem;
+    width: 70%;
+    background-color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.expenseItem label{
+    background-color: #c5c5c5;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0 4px 4px 0;
+}
+.expenseItem input{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    width: 70%;
+    margin-left: 1rem;
+}
+.categoryContainer{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+.category{
+  position: relative;
+  width: 40%;
+}
+.categoryDropdown{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.categoryDropdown i{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.catContainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+}
+.categoryItem{
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.categoryItem img{
+  height: 2.5rem;
+  margin: 0 0.9rem;
+}
+.formAddBtn{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.formAddBtn div{
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+    border-radius: 6px;
+    padding: 0.2rem 0.75rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.formAddBtn i{
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .addForm {
+    width: 90%;
+  }
+  .expenseItem{
+    width: 90%;
+  }
+  .amount{
+    width: 50% !important;
+  }
+  .category{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .addForm {
+    width: 80%;
+  }
+}

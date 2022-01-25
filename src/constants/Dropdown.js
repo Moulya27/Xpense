@@ -24,7 +24,7 @@ export const categories = [{
 },
 {
     id:5,
-    title: 'Finance',
+    title: 'Other',
     icon: require('../assets/Other.svg'),
     color: '#AB3CED',
 }
